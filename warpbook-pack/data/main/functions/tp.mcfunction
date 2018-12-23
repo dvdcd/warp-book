@@ -18,8 +18,33 @@ scoreboard players set @s warpcooldown 30
 #Step 4: to enable the autoupdate button, run /function main:resetupdate
 #That's it! You're done!
 
+#The crystal Ruins
+#execute if score @s warpbook matches 1 run tp
+#Townsend
+execute if score @s warpbook matches 2 run tp @s 5156 83 5829
+#Market
+execute if score @s warpbook matches 3 run tp @s 318 131 15527
+#Shadowfall Arena
+execute if score @s warpbook matches 4 run tp @s 5162 65 1470
+#Northern
+execute if score @s warpbook matches 5 run tp @s 434 80 -828
+#Eastern
+execute if score @s warpbook matches 6 run tp @s 1412 88 154
+#Souther
+execute if score @s warpbook matches 7 run tp @s 407 95 1267
+#Western
+execute if score @s warpbook matches 8 run tp @s -742 90 95
+#Northeastern
+execute if score @s warpbook matches 9 run tp @s 1419 132 -824
+#Southeastern
+execute if score @s warpbook matches 10 run tp @s 1374 86 1150
+#Northwestern
+execute if score @s warpbook matches 11 run tp @s -508 77 -825
+#Southwestern
+execute if score @s warpbook matches 12 run tp @s -507 83 1150
 
 #BEFORE HERE
+scoreboard players set @s warpbook 0
 #Play fancy particle effects
 execute at @s run particle minecraft:totem_of_undying ~.1 ~.1 ~.1 0 0 0 0.7 250 force
 execute at @s run playsound minecraft:block.beacon.ambient voice @s ~ ~ ~ 100
