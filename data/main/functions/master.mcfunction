@@ -6,7 +6,7 @@
 scoreboard players add #tick tick 1
 scoreboard players enable @a warpbook
 scoreboard players enable @a warpupdatet
-execute at @a unless score @s warpbook matches 1.. run scoreboard players set @s warpcooldown 0
+execute as @a unless score @s warpcooldown matches 1.. run scoreboard players set @s warpcooldown 0
 execute as @a unless score @s warpupdate matches 1 run scoreboard players set @s warpupdate 0
 execute as @a if score @s warpupdatet matches 1 run function main:update
 #Run the main warping command if a player has pushed the book button
